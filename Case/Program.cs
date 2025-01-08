@@ -192,6 +192,8 @@ switch(M)
 
 //case 18
 
+/*
+
 int a, b, c;
 Console.WriteLine("100 va 999 oraliqda son kiriting");
 a=int.Parse(Console.ReadLine());
@@ -240,4 +242,105 @@ switch (b)
     case 8: Console.Write(" sakkiz"); break;
     case 9: Console.Write(" To'qqiz"); break;
     default: Console.WriteLine("Xato son kiritdingiz"); break;
+}
+
+*/
+
+// case 19
+/*
+long a,k, b;
+Console.WriteLine("Yilni kiriting");
+a=long.Parse(Console.ReadLine());
+if(a>0)
+{
+    k = a % 12;
+    b = (a) % 60;
+    if (b > 0 & b < 13) b = 0;
+    else
+    {
+        if ( b < 25) b = 1;
+        else
+        {
+            if (b < 37) b = 2;
+            else
+            {
+                if (b < 49) b = 3;
+                else b = 4;
+            }
+        }
+    }
+    switch (k)
+    {
+        case 3: Console.Write("yo'lbars "); break;
+        case 4: Console.Write( "quyon "); break;
+        case 5: Console.Write( "ajdar "); break;
+        case 6: Console.Write( "ilon ") ; break;
+        case 7: Console.Write( "ot ") ; break;
+        case 8: Console.Write( "qo'y ") ; break;
+        case 9: Console.Write("maymun  "); break;
+        case 10: Console.Write( "tovuq "); break;
+        case 11: Console.Write( "it "); break;
+        case 0: Console.Write( "to'ng'iz "); break;
+        case 1: Console.Write( "sichqon "); break;
+        case 2: Console.Write( "sigir "); break;
+        
+    }
+    switch (b)
+    {
+        case 0: Console.Write("yashil "); break;
+        case 1: Console.Write("qizil "); break;
+        case 2: Console.Write("sariq "); break;
+        case 3: Console.Write("oq "); break;
+        case 4: Console.Write("qora "); break;
+
+    }   
+}
+*/
+
+// case 20
+
+short D, M;
+Console.WriteLine("Kunni kiriting:");
+D = short.Parse(Console.ReadLine());
+Console.WriteLine("Oyni kiriting");
+M = short.Parse(Console.ReadLine());
+
+switch(M)
+{
+    case 1: if (D > 0 & D < 32) { if (D < 20) Console.WriteLine("Tog' echkisi"); else { Console.WriteLine("Qovg'a"); } }
+        else  Console.WriteLine("Yanvar 31 kun") ; break;
+    case 2:
+        if (D > 0 & D < 30) { if (D < 19) Console.WriteLine("Qovg'a"); else { Console.WriteLine("Baliq"); } }
+        else Console.WriteLine("Fevral 29 yoki 28 kun"); break;
+    case 3:
+        if (D > 0 & D < 32) { if (D < 21) Console.WriteLine("Baliq"); else { Console.WriteLine("Qo'y"); } }
+        else Console.WriteLine("Mart 31 kun"); break;
+    case 4:
+        if (D > 0 & D < 31) { if (D < 20) Console.WriteLine("Qo'y"); else { Console.WriteLine("buzoq"); } }
+        else Console.WriteLine("Aprel 30 kun"); break;
+    case 5:
+        if (D > 0 & D < 32) { if (D < 21) Console.WriteLine("buzoq"); else { Console.WriteLine("Egizaklar"); } }
+        else Console.WriteLine("May 31 kun"); break;
+    case 6:
+        if (D > 0 & D < 31) { if (D < 22) Console.WriteLine("egizaklar"); else { Console.WriteLine("Qisqichbaqa"); } }
+        else Console.WriteLine("Iyun 30 kun"); break;
+    case 7:
+        if (D > 0 & D < 32) { if (D < 23) Console.WriteLine("Qisqichbaqa"); else { Console.WriteLine("Arslon"); } }
+        else Console.WriteLine("Iyul 31 kun"); break;
+    case 8:
+        if (D > 0 & D < 32) { if (D < 24) Console.WriteLine("Arslon"); else { Console.WriteLine("Parizod"); } }
+        else Console.WriteLine("Avgust 31 kun"); break;
+    case 9:
+        if (D > 0 & D < 31) { if (D < 24) Console.WriteLine("Parizod"); else { Console.WriteLine("Chayon"); } }
+        else Console.WriteLine("Sentabr 30 kun"); break;
+    case 10:
+        if (D > 0 & D < 32) { if (D < 24) Console.WriteLine("Chayon"); else { Console.WriteLine("O'qotar"); } }
+        else Console.WriteLine("Oktabr 31 kun"); break;
+    case 11:
+        if (D > 0 & D < 31) { if (D < 24) Console.WriteLine("O'qotar"); else { Console.WriteLine("Tog' echkisi"); } }
+        else Console.WriteLine("Noyabr 30 kun"); break;
+    case 12:
+        if (D > 0 & D < 32) { if (D < 24) Console.WriteLine("Tog' echkisi"); else { Console.WriteLine("Qovg'a"); } }
+        else Console.WriteLine("Dekabr 31 kun"); break;
+    default: Console.WriteLine("12 ta oy mavjud xolos");break;
 }
