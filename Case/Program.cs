@@ -298,12 +298,12 @@ if(a>0)
 */
 
 // case 20
-
-short D, M;
+/*
+byte D, M;
 Console.WriteLine("Kunni kiriting:");
-D = short.Parse(Console.ReadLine());
+D = byte.Parse(Console.ReadLine());
 Console.WriteLine("Oyni kiriting");
-M = short.Parse(Console.ReadLine());
+M = byte.Parse(Console.ReadLine());
 
 switch(M)
 {
@@ -344,3 +344,4 @@ switch(M)
         else Console.WriteLine("Dekabr 31 kun"); break;
     default: Console.WriteLine("12 ta oy mavjud xolos");break;
 }
+*/
